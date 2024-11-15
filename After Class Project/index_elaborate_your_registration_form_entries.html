@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 35px;
+            margin-left: 35px ;
+            background-color: lightgreen;
+        }
+        th {
+            text-align: left;
+            color: blue;            
+        }
+        td {
+            text-align: left;   
+                     
+        }
+        .button {
+            text-align: center;
+            padding: 10px;            
+        }
+        fieldset {
+            background-color: azure;
+        }
+        legend {
+            font-size: 30px;
+            color: blueviolet;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table {
+            width: 50%;
+        }
+                   
+        
+
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Bio Data Form</legend><br>
+    <table>               
+        <tr>
+            <th>First Name</th>
+            <td><input type="text" placeholder="Your First Name" required></td>
+        </tr>
+
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" placeholder="Your Last Name" required></td>
+        </tr>
+        
+        <tr>
+            <th>Email</th>
+            <td><input type="email" placeholder="Your Email" required></td>
+        </tr>
+
+        <tr>
+            <th>Address</th>
+            <td><textarea placeholder="Your Address" required></textarea></td>
+        </tr>
+
+        <tr>
+            <th>Contact Number</th>
+            <td><input type="tel" placeholder="Your Contact Number" required></td>
+        </tr>
+        
+
+        <tr>
+            <th>Father's Name</th>
+            <td><input type="text" placeholder="Your Father's Name"></td>
+        </tr>
+
+        <tr>
+            <th>Mother's Name</th>
+            <td><input type="text" placeholder="Your Mother's Name"></td>
+        </tr>
+
+        <tr>
+            <th>Permarent Address</th>
+            <td><textarea placeholder="Your Permarent Address" required></textarea></td>
+        </tr>
+
+        <tr>
+            <th>Date of Birth</th>
+            <td><input type="date" required></td>
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td><input type="number" placeholder="Your Age"></td>
+        </tr>
+
+        <tr>
+            <th>Nationality</th>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th>Marital Status</th>
+            <td>
+                <input type="radio" name="marital-status">Married
+                <input type="radio" name="marital-status"> Unmarried
+                <input type="radio" name="marital-status"> Divorced                
+            </td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Other
+            </td>
+        </tr>
+
+        <tr>
+            <th>Hobby</th>
+            <td>
+                <select>
+                    <option >None</option>
+                    <option>Painting</option>
+                    <option>Reading</option>
+                    <option>Coding</option>
+                    <option>Other</option>
+                    <option>No hobby</option>                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>About Yourself <br>
+            <textarea></textarea></th>
+        </tr>
+    </table>
+
+    <div class="button">
+    <button type="reset">Reset All</button>
+    <button type="submit">Click to Submit</button>
+    </div>
+
+    </fieldset>    
+</body>
+</html>
