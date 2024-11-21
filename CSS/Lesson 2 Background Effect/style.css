@@ -10,8 +10,9 @@ body{
 }
 
 .text {
-    color: aqua;
-    background-color: lightgray;    
+    color: aqua;   
+    padding: 0px;
+    margin: 0px;
 
 }
 
