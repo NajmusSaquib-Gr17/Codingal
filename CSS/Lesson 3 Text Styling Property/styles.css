@@ -76,11 +76,13 @@ body {
 }
 
 .end {
-    color: lightgreen;
-    text-align: center;
-    line-height: 9cm;
-    padding: 15px;
+    color: lightgreen;    
+    margin-top: 100px;    
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 5px 2px 3px blue;
+    border-left: 6px solid yellow;
+    border-right: 6px solid yellow;
+    text-align: center;
+    
 }
