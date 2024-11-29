@@ -1,0 +1,88 @@
+body {
+    background-image: url(forest.jpeg);    
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 600px;
+    background-color: black; 
+    
+}
+
+.all {
+    margin: 40px;
+}
+
+.pic {
+    height: 80px;
+    width: 50%;
+    padding: 12px;
+    font-weight: bold;    
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(8, 248, 92);
+           
+}
+
+.linear_gradient_top_to_bottom {
+    height: 80px;
+    width: 53%;
+    padding: 12px;
+    background: linear-gradient( rgba(0,255,196,1) 12%, rgba(83,112,255,1) 59%, rgba(236,255,0,1) 100%);
+    font-weight: bold;    
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+}
+
+.linear_gradient_left_to_right {
+    height: 80px;
+    width: 53%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(to right, yellow, red, cyan);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    
+}
+
+.linear_gradient_diagonal {
+    height: 80px;
+    width: 53%;
+    padding: 12px;
+    margin-top: 20px;
+    background:  linear-gradient(to bottom right, rgba(29,51,116,1) 4%, rgba(30,236,157,1) 49%, rgba(139,78,255,1) 86%);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    
+}
+
+.linear_gradient_multicolor {
+    height: 80px;
+    width: 53%;
+    padding: 12px;
+    margin-top: 20px;
+    background:  linear-gradient(45deg, rgba(218,191,19,1) 4%, rgba(20,200,56,1) 17%, rgba(20,156,219,1) 31%, rgba(8,116,240,1) 49%, rgba(62,37,235,1) 66%, rgba(156,43,235,1) 78%, rgba(230,39,214,1) 86%, rgba(238,48,48,1) 92%);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;   
+}
+
+.radial_gradient {
+    height: 80px;
+    width: 53%;
+    padding: 12px;
+    margin-top: 20px;
+    background: radial-gradient(circle, rgba(60,48,238,1) 40%, rgba(39,173,230,1) 91%);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
