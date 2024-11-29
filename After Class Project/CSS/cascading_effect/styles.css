@@ -13,19 +13,21 @@ body {
 }
 
 .pic {
-    height: 80px;
-    width: 50%;
+    height: 3em;
+    width: 53%;
     padding: 12px;
     font-weight: bold;    
     text-align: center;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(8, 248, 92);
+    color: rgb(255, 223, 0);
+    border: 3px solid;    
+    margin-bottom: 20px ;
            
 }
 
 .linear_gradient_top_to_bottom {
-    height: 80px;
+    height: 3em;
     width: 53%;
     padding: 12px;
     background: linear-gradient( rgba(0,255,196,1) 12%, rgba(83,112,255,1) 59%, rgba(236,255,0,1) 100%);
@@ -37,7 +39,7 @@ body {
 }
 
 .linear_gradient_left_to_right {
-    height: 80px;
+    height: 3em;
     width: 53%;
     padding: 12px;
     margin-top: 20px;
@@ -50,7 +52,7 @@ body {
 }
 
 .linear_gradient_diagonal {
-    height: 80px;
+    height: 3em;
     width: 53%;
     padding: 12px;
     margin-top: 20px;
@@ -63,7 +65,7 @@ body {
 }
 
 .linear_gradient_multicolor {
-    height: 80px;
+    height: 3em;
     width: 53%;
     padding: 12px;
     margin-top: 20px;
@@ -75,7 +77,7 @@ body {
 }
 
 .radial_gradient {
-    height: 80px;
+    height: 3em;
     width: 53%;
     padding: 12px;
     margin-top: 20px;
