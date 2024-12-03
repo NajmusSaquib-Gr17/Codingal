@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#h1 {
+    background-color: rgb(121, 233, 233);
+    color: rgb(38, 107, 217);
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+    align-content: center;
+}
+
+#hline {
+    background-color: aqua;
+    height: 5px;
+}
+
+#div1 {
+    background-color: rgb(108, 108, 249);
+    color: white;
+    width: 18%;    
+    text-align: center;
+    align-content: center;
+    padding: 3em;
+    margin-right: 1em;
+    float: left;
+}
+
+#div2 {
+    background-color: rgb(187, 193, 199);
+    color: rgb(49, 54, 57);
+    width: 18%;
+    padding: 3em;
+    text-align: center;
+    align-content: center;    
+}
