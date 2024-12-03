@@ -13,8 +13,9 @@ body {
 }
 
 #hline {
-    background-color: aqua;
-    height: 5px;
+    background-color: aqua;    
+    height: 6px;
+    border-radius:10px;
 }
 
 #div1 {
