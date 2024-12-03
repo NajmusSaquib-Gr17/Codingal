@@ -1,0 +1,240 @@
+body {
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: #151517;
+}
+
+header {
+    background-color: #a29d8f;    
+    height: 9em;    
+    align-content: center;
+    text-align: center;    
+}
+
+#h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #3C3C3C;
+}
+
+#h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    height: 2em;
+    width: 50em;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(222, 136, 44);
+}
+
+#div1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 4em;
+    margin-bottom: 1em;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+    width: 15em;
+    height: 4em;
+    text-align: center;
+    align-content: center;
+}
+
+#div2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 55em;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+    padding: 1em;    
+    margin-bottom: 1em;
+    font-style: italic; 
+    width: fit-content;   
+    height: 2em;
+    text-align: right;
+    align-content: center;
+}
+
+#div3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 7em;
+    padding: 1em;    
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-left: 7em;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;    
+    margin-left: 30em;
+    padding: 1em;    
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 30em;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div7 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;    
+    margin-left: 2em;
+    padding: 1em;
+    margin-top: 3em;
+    
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div8 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: lowercase;    
+    margin-left: 2em;
+    padding: 1em;    
+    margin-bottom: 1em;
+    width: fit-content;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #3C3C3C;
+}
+
+#div9 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;    
+    margin: auto;
+    padding: 3em;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    width: 40em;
+    text-align: center;
+    align-content: center;
+    background-color: #a29d8f;
+    color: #1042cb;
+}
+
+#div10 {
+    padding: 1em;
+    font-size: 50px;
+    color: #3C3C3C;
+    text-shadow: 3px 2px 3px #1F51FF;
+}
+
+#h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: auto;
+    height: 2em;
+    width: 50em;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(106, 67, 195);
+    color: whitesmoke;
+}
+
+#div11 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;       
+    margin-left: auto;
+    margin-right: 2em;
+    padding: 2em;    
+    margin-bottom: 1em;
+    width: 11em;
+    height: 5em;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(92, 202, 101);
+    color: #0400ff;
+}
+
+#div12 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    transform: rotate(180deg);       
+    margin-left: 5em;
+    margin-right: auto;
+    padding: 2em;    
+    margin-bottom: 1em;
+    width: 11em;
+    height: 5em;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(71, 174, 234);
+    color: #000000;
+}
+
+#div13 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    transform: scale(1.5);       
+    margin-left: auto;
+    margin-right: 12em;
+    padding: 2em;    
+    margin-bottom: 1em;
+    width: 11em;
+    height: 5em;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(156, 80, 227);
+    color: #302f36;
+}
+
+#div14 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;  
+    transform: skew(15deg, 15deg);     
+    margin-left: 15em;
+    margin-right: auto;
+    padding: 2em;    
+    margin-bottom: 1em;
+    width: 11em;
+    height: 5em;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(89, 125, 217);
+    color: #78dd78; 
+}
+
+footer {
+    background-color: #8acf96;
+    color: #0d14df;    
+    width: 80%;
+    margin: auto;   
+    text-shadow: 2px 1px 3px #0400ff;
+    font-size: 30px;    
+    margin-top: 5em; 
+    padding: 2em;   
+    align-content: center;
+    text-align: center;
+}
