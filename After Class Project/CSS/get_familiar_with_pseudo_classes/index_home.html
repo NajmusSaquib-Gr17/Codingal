@@ -26,8 +26,7 @@
 
     button {
         text-align: center;
-        align-items: center;
-        margin-left: 230px;
+        align-items: center;        
         background-color: #1f79ef;
         padding: 15px;
         border-radius: 10px;
@@ -35,15 +34,31 @@
         
     }
 
+    div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
     button a {
         text-decoration: none;
+        color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 25px;
+    }
+
+    button:hover {
+        background-color: #8eb340;
     }
 </style>
 <body>
     <h1>Welcome to Website-X</h1>
     <p>Website - X is a imaginary website built of the test of the Pseudo Class</p>
+    <div>
     <button><a href="index.html">Return Back</a></button>
+    </div>
 </body>
 </html>
