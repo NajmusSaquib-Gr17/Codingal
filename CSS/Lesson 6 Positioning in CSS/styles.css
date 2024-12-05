@@ -1,0 +1,41 @@
+body {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #babfc2;
+}
+
+.static {
+    position: static;
+    border: 4px solid purple;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.absolute {
+    position: absolute;
+    border: 4px solid green;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.relative {
+    position: relative;
+    border: 4px solid blue;
+    padding: 5px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 400px;
+}
+
+.sticky {
+    position: sticky;
+    border: 4px solid rgb(255, 153, 0);
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.fixed {
+    position: fixed;
+    border: 4px solid slateblue;
+    padding: 5px;
+}
