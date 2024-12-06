@@ -1,0 +1,49 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(50, 49, 52);
+}
+
+.img_pizza img{
+    width: 20%;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+}
+
+.img_burger img{
+    width: 17%;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.pizza {
+    float: left;
+    width: 67%;
+    font-size: 150%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: rgb(243, 247, 164);
+    padding: 1%;
+    
+}
+
+.pizza h1 {
+    color: blue;
+}
+
+.burger {
+    float: right;
+    width: 78%;
+    font-size: 150%;
+    margin-right: 0.5%;
+    margin-top: 3.1%; 
+    padding: 1%;
+    background-color: antiquewhite;   
+}
+
+.burger h1 {
+    color: crimson;
+}
