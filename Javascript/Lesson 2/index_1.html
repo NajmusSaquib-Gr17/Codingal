@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Function</title>
+</head>
+<body>
+    
+    <h1>Scope of Function.</h1>
+    <button onclick="scope()">Click to Add</button>
+    <p id="demo1">x + y output</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+
+    <script>
+        var x = 9;
+        function scope(){
+            var y = 6;
+            document.getElementById("demo1").innerHTML = x + y;
+        }
+
+        document.getElementById("demo2").innerHTML = x;
+
+        document.getElementById("demo3").innerHTML = y;
+    </script>
+
+
+</body>
+</html>
