@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<body>
+    <h1>Multiplication by Function</h1>
+
+    <button type="button" onclick="multiplication1(4 , 6)">Click Me (x and y is defined)</button> <br> <br> <br>
+
+    <button type="button" onclick="multiplication2(4)">Click Me (only x is defined) </button>
+
+
+    
+
+    <script>
+
+        function multiplication1(x,y){
+            if(y == undefined){
+
+                var y = 2;                         
+                               
+            }
+
+            document.write (x * y);
+        }
+
+        function multiplication2(x,y){
+            if(y == undefined){
+                var y = 2;
+                
+                                
+            }
+
+            document.write (x * y);
+        }
+
+    </script>
+</body>
+</html>
