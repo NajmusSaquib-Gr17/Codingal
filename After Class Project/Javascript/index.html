@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <h1>Basic Calculation</h1>
+    <p>Addition, Subtraction, Multiplication and Division</p>
+
+    <button type="button" onclick="operation(8,4)">Click Me</button>
+
+    <p id="demo1">Addition of number "8" and "4"</p>
+    <p id="demo2">Subtraction of number "8" and "4"</p>
+    <p id="demo3">Multiplication of number "8" and "4"</p>
+    <p id="demo4">Division of number "8" and "4"</p>
+
+
+    <script>
+
+        function operation(x,y) {
+
+            var x = 8;
+            var y = 4;
+
+            var a = x + y;
+            var b = x - y;
+            var c = x * y;
+            var d = x/y;
+
+            document.getElementById("demo1").innerHTML = ("Value of 8 + 4 is: "+a+" ");
+
+            document.getElementById("demo2").innerHTML = ("Value of 8 - 4 is: "+b+" ");
+
+            document.getElementById("demo3").innerHTML = ("Value of 8 * 4 is: "+c+" ");
+
+            document.getElementById("demo4").innerHTML = ("Value of 8 / 4 is: "+d+" ");
+        }
+
+
+    </script>
+
+
+</body>
+</html>
