@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Loops and Switches</title>
+    <style>
+        body {
+            margin: auto;
+            padding: auto;
+            background-color: rgb(62, 145, 178);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 5px;
+            color: aliceblue;
+            font-size: 2rem;
+        }
+
+        p {
+            margin-left: 1rem;
+            font-size: 1.1rem;            
+        }
+
+        #btn1 {
+            margin-left: 1.5rem;
+            padding: 1.2rem;
+            
+            
+            
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(13, 110, 253);
+            color: rgba(255, 255, 255, 0.817);
+        }
+
+        #set {
+            border: 2px solid rgb(13, 110, 253);
+            height: 3rem;
+            width:  6rem;
+            margin: auto;
+            padding-left: 5px;
+            padding-right: 3px;
+            border-radius: 10px;            
+            text-align: center;
+            display: flex;           
+            align-items: center;
+        }
+
+        #btn2 {
+            margin-left: 1.5rem;
+            padding: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(13, 110, 253);
+            color: rgba(255, 255, 255, 0.817);
+        }
+
+        #time {
+            border: 2px solid rgb(13, 110, 253);
+            height: 3rem;
+            width:  30rem;
+            margin: auto;
+            padding-left: 5px;
+            padding-right: 3px;
+            border-radius: 10px;            
+            text-align: center;
+            display: flex;
+            align-items: center;        
+
+        }
+
+        #btn3 {
+            margin-left: 1.5rem;
+            padding: 1.2rem;
+            
+            
+            
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(13, 110, 253);
+            color: rgba(255, 255, 255, 0.817);
+        }
+
+
+        #otp {
+            border: 2px solid rgb(13, 110, 253);
+            height: 3rem;
+            width:  30rem;
+            margin: auto;
+            padding-left: 5px;
+            padding-right: 3px;
+            border-radius: 10px;            
+            text-align: center;
+            display: flex;
+            align-items: center; 
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Method, Loop and Switches.</h2>
+
+    <p>Click the Button below to generate a set of random numbers between 1-100.</p>    
+    <button id="btn1" type="button" onclick="rndnum()" >Generate Random Number</button> <br> <br>
+    <p id="set"></p>
+
+
+    <p>Click the Button below to generate Today's Date and Time.</p>
+    <button id="btn2" type="button" onclick="date()">Date and Time</button> <br> <br>
+    <p id="time"></p>
+
+    <p>Click the Button below to generate 4 digit OTP.</p>
+    <button id="btn3" type="button" onclick="generateOTP()" >Generate OTP</button> <br> <br>
+    <P id="otp"></P>
+
+</body>
+
+
+
+
+
+
+<script>
+
+    function rndnum(){
+        document.getElementById("set").innerHTML = Math.floor(Math.random()*100);
+    }
+
+    function date(){
+        document.getElementById("time").innerHTML = Date();
+    }
+
+    function generateOTP(){
+        document.getElementById("otp").innerHTML = Math.round(Math.random()*1000 + 2000);
+    }
+
+</script>
+
+
+
+</html>
