@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument | Math Function</title>
+    
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        table {
+            background-color: rgb(144, 182, 144);
+        }
+        td {
+            background-color: rgb(13, 110, 253);
+            color: white;
+        }
+        tr {
+            background-color: rgb(128, 139, 203);
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgba(0, 91, 249, 0.849);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sum of Arguments</h2>
+    <p>Below is the sum of numbers from "1-10."</p>
+    <button type="button" onclick="calculateSum()" >Click to get the Summation</button>
+
+    <p id="sum1"></p>
+    
+    <br>
+
+    <h2>Trigonometric Angle Value for Sine, Cosine, Tangent.</h2>
+    <p>Using In-built Math function in java scritp</p>
+
+
+
+    <button type="button" onclick="angleCal()">Click to get Value</button>
+    <br> <br>
+    <table>
+        <tr>
+        <th style="border: none; background-color: rgb(144, 182, 144);"></th>        
+        <th>Deg(0)</th>
+        <th>Deg(30)</th>
+        <th>Deg(45)</th>
+        <th>Deg(60)</th>
+        <th>Deg(90)</th>    
+        </tr>
+        <tr>
+            <th>Sine</th>
+            <td id="d11"></td>
+            <td id="d12"></td>
+            <td id="d13"></td>
+            <td id="d14"></td>
+            <td id="d15"></td>
+        </tr>
+
+        <tr>
+            <th>Cosine</th>
+            <td id="d21"></td>
+            <td id="d22"></td>
+            <td id="d23"></td>
+            <td id="d24"></td>
+            <td id="d25"></td>
+        </tr>
+
+        <tr>
+            <th>Tangent</th>
+            <td id="d31"></td>
+            <td id="d32"></td>
+            <td id="d33"></td>
+            <td id="d34"></td>
+            <td id="d35"></td>
+        </tr>
+    </table>
+
+    <script>
+            function sumall() {
+        var sum = 0;
+        for (var i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+
+        return sum;
+    }
+
+    function calculateSum() {
+        var result = sumall(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        document.getElementById("sum1").innerHTML = "The sum is: " + result;
+    }
+
+
+
+    function angleCal(){
+        document.getElementById("d11").innerHTML = (Math.sin(0 * (Math.PI / 180))).toFixed(4);
+        document.getElementById("d12").innerHTML = (Math.sin(30 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d13").innerHTML = (Math.sin(45 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d14").innerHTML = (Math.sin(60 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d15").innerHTML = (Math.sin(90 * (Math.PI /180))).toFixed(4);
+
+        document.getElementById("d21").innerHTML = (Math.cos(0 * (Math.PI / 180))).toFixed(4);
+        document.getElementById("d22").innerHTML = (Math.cos(30 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d23").innerHTML = (Math.cos(45 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d24").innerHTML = (Math.cos(60 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d25").innerHTML = (Math.cos(90 * (Math.PI /180))).toFixed(4);
+
+        document.getElementById("d31").innerHTML = (Math.tan(0 * (Math.PI / 180))).toFixed(4);
+        document.getElementById("d32").innerHTML = (Math.tan(30 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d33").innerHTML = (Math.tan(45 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d34").innerHTML = (Math.tan(60 * (Math.PI /180))).toFixed(4);
+        document.getElementById("d35").innerHTML = "undefined";
+    }
+    </script>
+</body>
+</html>
