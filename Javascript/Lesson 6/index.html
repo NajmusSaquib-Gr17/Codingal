@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | HTML</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to the Webpage.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus reprehenderit, nihil assumenda dolorem ratione impedit corrupti nostrum, praesentium accusamus incidunt repudiandae sapiente explicabo aperiam ipsa in rem reiciendis nesciunt officia quidem maiores omnis sed ea excepturi? Unde pariatur iste maxime, autem vero quos saepe, ratione possimus nesciunt ex eaque perspiciatis.</p>
+    <button id="btn">Click Me@!</button>
+
+    <script>
+        var text = document.getElementById('heading');
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            text.innerHTML = 'Hello!';
+            btn.innerHTML = 'Button was clicked';
+        })
+    </script>
+</body>
+</html>
