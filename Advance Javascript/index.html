@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief on Javascript.</title>
+
+    <style>
+        body {
+            background-color: rgb(33, 36, 41);
+            color: rgb(248, 249, 251);      
+        }
+
+        h2 {
+            background-color: rgb(13, 110, 253) ;
+            color: rgb(248, 249, 251);
+            padding: 10px;
+        }
+
+        p {
+            background-color: rgb(2, 167, 132);
+            padding: 10px;
+        }
+
+        button {
+            background-color: rgb(13, 110, 253);
+            color: rgb(248, 249, 251);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Brief on Javascript</h2>    
+   
+    <h2> Conditional Statement.</h2>
+
+    <p>Click the Button for greeting.</p>
+    <button type="button" onclick="greet()">Click me</button> <br> <br>    
+    <span id="hour"></span> <br>
+    <span id="greet"></span>
+
+    <p>Data Type Check</p>
+
+    
+
+
+    <script>
+        var a = 10;
+        var b = "10";
+        var c = 30;
+        var d = null;
+        var e;
+
+        document.write("a and b are equal : " + (a==b) + "<br>");
+        document.write("The value of d : " + d + "<br>")
+        document.write("The value of e : " + typeof(e) + "<br>")
+
+        function greet(){
+            var greeting;
+            var hour = new Date().getHours();
+            var minute = new Date().getMinutes();
+
+            if(hour < 10){
+                greeting = "Good Morning!";
+            } else if(hour < 20){
+                greeting = "Good Day!";
+            }else{
+                greeting = "Good evening!";
+            }
+
+
+
+            document.getElementById("hour").innerHTML = "The time is : "+ hour + ":" + minute;
+            document.getElementById("greet").innerHTML = greeting;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
