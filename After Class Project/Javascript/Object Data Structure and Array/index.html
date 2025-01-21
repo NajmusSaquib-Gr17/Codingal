@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object | Array</title>
+</head>
+<style>
+    body {
+        background-color: rgb(33, 36, 41);
+        color: rgb(248, 249, 251);
+        font-size: 20px;
+    }
+    button {
+        padding: 1rem;
+        border: none;
+        background-color: rgb(13, 110, 253);
+        color: rgb(248, 249, 251);
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <h2>Javascript Object and Array.</h2>
+    <button type="button" onclick="myFuction1()">Click For Fruits Name in Bangledesh</button>
+    <p id="demo"></p>
+    <br> <br>
+    <button type="button" onclick="myFuction2()">Click For Fruits Name in Bangledesh after poping</button>
+    <p id="demo1"></p>
+    <br> <br>
+    <button type="button" onclick="myFuction3()">Student Details</button>
+    <p id="demo2"></p>
+
+
+    <script>
+        function myFuction1(){
+            var array = ["Banana","Jackfruit","Litchi", "Amra"];
+            document.getElementById("demo").innerHTML = ("List of Array of Fruits in Bangladesh <br> <br>" + array.join("<br>"));
+        }
+
+        function myFuction2(){
+            var array = ["Banana","Jackfruit","Litchi", "Amra"];
+            array.pop ();
+            document.getElementById("demo1").innerHTML = ("List of Array of Fruits in Bangladesh <br> <br>" + array.join("<br>"));
+        }
+
+        function myFuction3(){
+            var student = {
+               first_Name: "Najmus",
+               last_Name: "Saquib",
+               roll: "12618078",               
+            }
+            document.getElementById("demo2").innerHTML = "Details Of the student <br> <br>" + "First Name : " + student.first_Name + "<br>Last Name : " + student.last_Name + "<br>Roll : " + student.roll;
+        }
+
+
+    </script>
+</body>
+</html>
