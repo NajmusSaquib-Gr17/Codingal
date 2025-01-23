@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class|Inheritence</title>
+</head>
+<body>
+        <h1>Inheritence</h1>
+        <p id="details"></p>
+
+
+
+        <script>
+            class Car {
+                constructor(brand, topspeed){
+                    this.brand = brand;                    
+                    this.topspeed = topspeed;                    
+                }
+
+                present(){
+                    return "I have a " + this.brand + " " + this.topspeed;
+                }
+            }
+
+            class Model extends Car {
+                constructor(brand, topspeed, model){
+                    super(brand, topspeed);
+                    this.model = model;
+                }
+
+                show(){
+                    return this.present() + "It is a " + this.model;
+                }
+            }
+
+            let car1 = new Model('BMW', 200, 'X5');
+            document.getElementById("details").innerHTML = car1.present;
+
+        </script>
+</body>
+</html>
