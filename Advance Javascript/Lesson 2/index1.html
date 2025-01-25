@@ -6,36 +6,67 @@
     <title>Class|Inheritence</title>
 </head>
 <body>
-        <h1>Inheritence</h1>
-        <p id="details"></p>
+<h1>Inheritance</h1>
+<p id="details"></p>
+
+<p id="a"></p>
+<p id="b"></p>
+<p id="c"></p>
+
+<script>
+  class Car {
+    constructor(brand, topspeed){
+      this.brand = brand;                    
+      this.topspeed = topspeed;                    
+    }
+
+    present(){
+      return "I have a " + this.brand + " " + this.topspeed;
+    }
+  }
+
+  class Model extends Car {
+    constructor(brand, topspeed, model){
+      super(brand, topspeed);
+      this.model = model;
+    }
+
+    show(){
+      return this.present() + " It is a " + this.model;
+    }
+  }
+
+  let car1 = new Model('BMW', 200, 'X5');
+  document.getElementById("details").innerHTML = car1.present();
+
+  class Student {
+    constructor(name) {
+      this.name = name;
+    }
+
+    static welcome() {
+      return "Welcome"; 
+    }
+
+    static hello() {
+      return "Hello";     
+    }
+
+    hi() {
+      return "Hi";     
+    }
+  }
+
+  // Removed the + operator, it's not needed
+  document.write('Student')
 
 
+  let student = new Student('John');
+  document.getElementById("a").innerHTML = Student.welcome(); 
+  document.getElementById("b").innerHTML = Student.hello();
+  document.getElementById("c").innerHTML = car1.show(); 
 
-        <script>
-            class Car {
-                constructor(brand, topspeed){
-                    this.brand = brand;                    
-                    this.topspeed = topspeed;                    
-                }
-
-                present(){
-                    return "I have a " + this.brand + " " + this.topspeed;
-                }
-            }
-
-            class Model extends Car {
-                constructor(brand, topspeed, model){
-                    super(brand, topspeed);
-                    this.model = model;
-                }
-
-                show(){
-                    return this.present() + "It is a " + this.model;
-                }
-            }
-
-            let car1 = new Model('BMW', 200, 'X5');
-            document.getElementById("details").innerHTML = car1.present;
+</script>
 
         </script>
 </body>
