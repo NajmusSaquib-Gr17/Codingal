@@ -1,171 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bio Data</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 35px;
-            margin-left: 35px ;
-            background-color: lightgreen;
-        }
-        th {
-            text-align: left;
-            color: blue;
-            padding: 10px;          
-        }
-        td {
-            text-align: left;   
-                     
-        }
-        .button {
-            text-align: center;
-            padding: 10px;            
-        }
-        fieldset {
-            background-color: azure;
-            border-width: 3px;
-            border-style: solid;
-            border-color: #333333;
-            width: 50%;
-            margin: auto;
-                        
-        }
-        legend {
-            font-size: 40px;
-            color: blueviolet;
-            font-style: italic;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 35px;
+        margin-left: 35px;
+        background-color: lightgreen;
+      }
+      th {
+        text-align: left;
+        color: blue;
+        padding: 10px;
+      }
+      td {
+        text-align: left;
+      }
+      .button {
+        text-align: center;
+        padding: 10px;
+      }
+      fieldset {
+        background-color: azure;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #333333;
+        width: 50%;
+        margin: auto;
+      }
+      legend {
+        font-size: 40px;
+        color: blueviolet;
+        font-style: italic;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
 
-        table {
-            width: 50%;
-        }
+      table {
+        width: 50%;
+      }
 
-        .button button{
-            padding: 10px;
-            background-color: #333333;
-            color: white;
-            border: 2px solid slateblue;
-            border-radius: 10px;            
-        }
+      .button button {
+        padding: 10px;
+        background-color: #333333;
+        color: white;
+        border: 2px solid slateblue;
+        border-radius: 10px;
+      }
 
-        .button button:hover {
-            background-color: black;
-        }
-                   
-        
-
+      .button button:hover {
+        background-color: black;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <fieldset>
-        <legend>Bio Data Form</legend><br>
-    <form>
-    <table>                       
-        <tr>
+      <legend>Bio Data Form</legend>
+      <br />
+      <form>
+        <table>
+          <tr>
             <th>First Name</th>
-            <td><input type="text" placeholder="Your First Name" required></td>
-        </tr>
+            <td>
+              <input type="text" placeholder="Your First Name" required />
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Last Name</th>
-            <td><input type="text" placeholder="Your Last Name" required></td>
-        </tr>
-        
-        <tr>
-            <th>Email</th>
-            <td><input type="email" placeholder="Your Email" required></td>
-        </tr>
+            <td><input type="text" placeholder="Your Last Name" required /></td>
+          </tr>
 
-        <tr>
+          <tr>
+            <th>Email</th>
+            <td><input type="email" placeholder="Your Email" required /></td>
+          </tr>
+
+          <tr>
             <th>Address</th>
             <td><textarea placeholder="Your Address" required></textarea></td>
-        </tr>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Contact Number</th>
-            <td><input type="tel" placeholder="Your Contact Number" required></td>
-        </tr>
-        
+            <td>
+              <input type="tel" placeholder="Your Contact Number" required />
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Father's Name</th>
-            <td><input type="text" placeholder="Your Father's Name"></td>
-        </tr>
+            <td><input type="text" placeholder="Your Father's Name" /></td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Mother's Name</th>
-            <td><input type="text" placeholder="Your Mother's Name"></td>
-        </tr>
+            <td><input type="text" placeholder="Your Mother's Name" /></td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Permarent Address</th>
-            <td><textarea placeholder="Your Permarent Address" required></textarea></td>
-        </tr>
+            <td>
+              <textarea
+                placeholder="Your Permarent Address"
+                required
+              ></textarea>
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Date of Birth</th>
-            <td><input type="date" required></td>
-        </tr>
+            <td><input type="date" required /></td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Age</th>
-            <td><input type="number" placeholder="Your Age"></td>
-        </tr>
+            <td><input type="number" placeholder="Your Age" /></td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Nationality</th>
-            <td><input type="text"></td>
-        </tr>
+            <td><input type="text" /></td>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Marital Status</th>
             <td>
-                <input type="radio" name="marital-status">Married
-                <input type="radio" name="marital-status"> Unmarried
-                <input type="radio" name="marital-status"> Divorced                
+              <input type="radio" name="marital-status" />Married
+              <input type="radio" name="marital-status" /> Unmarried
+              <input type="radio" name="marital-status" /> Divorced
             </td>
-        </tr>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Gender</th>
             <td>
-                <input type="radio" name="gender">Male
-                <input type="radio" name="gender">Female
-                <input type="radio" name="gender">Other
+              <input type="radio" name="gender" />Male
+              <input type="radio" name="gender" />Female
+              <input type="radio" name="gender" />Other
             </td>
-        </tr>
+          </tr>
 
-        <tr>
+          <tr>
             <th>Hobby</th>
             <td>
-                <select>
-                    <option >None</option>
-                    <option>Painting</option>
-                    <option>Reading</option>
-                    <option>Coding</option>
-                    <option>Other</option>
-                    <option>No hobby</option>                    
-                </select>
+              <select>
+                <option>None</option>
+                <option>Painting</option>
+                <option>Reading</option>
+                <option>Coding</option>
+                <option>Other</option>
+                <option>No hobby</option>
+              </select>
             </td>
-        </tr>
-        <tr>
-            <th>About Yourself <br>
-            <textarea></textarea></th>
-        </tr>
-               
-    </table>
+          </tr>
+          <tr>
+            <th>
+              About Yourself <br />
+              <textarea></textarea>
+            </th>
+          </tr>
+        </table>
 
-            <div class="button">
-                <button type="reset">Reset All</button>
-                <button type="submit">Submit</button>
-            </div>
-    </form>
-
-    </fieldset>    
-</body>
+        <div class="button">
+          <button type="reset">Reset All</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </fieldset>
+  </body>
 </html>
