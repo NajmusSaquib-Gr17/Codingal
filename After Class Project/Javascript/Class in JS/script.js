@@ -9,7 +9,6 @@ class Employee {
     joining_date,
     degination,
     salary
-
   ) {
     this.name = name;
     this.birth_date = birth_date;
@@ -20,7 +19,6 @@ class Employee {
     this.joining_date = joining_date;
     this.degination = degination;
     this.salary = salary;
-
   }
 }
 
@@ -379,6 +377,4 @@ function displayEmployees() {
   });
 }
 
-document
-  .getElementById("btn1")
-  .addEventListener("click", displayEmployees);
+document.getElementById("btn1").addEventListener("click", displayEmployees);
