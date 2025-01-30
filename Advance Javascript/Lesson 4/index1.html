@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <body>
+    <h3>Error Handling</h3>
+    <h4>The error of javascript will be shown below if any error is done :</h4>
+
+    <p
+      id="error"
+      style="
+        padding: 10px;
+        background-color: rgb(13, 110, 253);
+        color: rgb(248, 249, 251);
+      "
+    ></p>
+
+    <script>
+      try {
+        function addalert(message) {
+          alert(message);
+        }
+        addalert("Welcome Guest!");
+      } catch (error) {
+        document.getElementById("error").innerHTML = error.message;
+      }
+    </script>
+  </body>
+</html>

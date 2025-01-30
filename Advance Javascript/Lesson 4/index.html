@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4</title>
+  </head>
+  <body>
+    <h3>Data Type Conversion, Regular Expresion, Error handling.</h3>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+      //String to Number Conversion.
+      let a = "5";
+      let b = Number(a);
+
+      document.getElementById("demo1").innerHTML =
+        "The type of a variable = " +
+        typeof a +
+        "<br>" +
+        "The type of b variable = " +
+        typeof b;
+
+      //Number to String Conversion
+      let x = 5;
+      let y = x.toString();
+      let z = String(x);
+
+      document.getElementById("demo2").innerHTML =
+        "The type of x variable = " +
+        typeof x +
+        "<br>" +
+        "Conversion of number type to string type by *variablename*.toString() method = " +
+        typeof y +
+        "<br>" +
+        "Conversion of number type to string type by String() method = " +
+        typeof z;
+    </script>
+  </body>
+</html>
