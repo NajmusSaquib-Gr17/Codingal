@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class In JS</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      #btn1 {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #btn1:hover {
+        background-color: #3e8e41;
+      }
+
+      #employee-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      #employee-table th,
+      #employee-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #employee-table th {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Class in javascript....</h2>
+    <button id="btn1">Show Employee Details</button>
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date of Birth</th>
+          <th>Present Address</th>
+          <th>Permarent Address</th>
+          <th>Contact</th>
+          <th>Salary</th>
+          <th>Department</th>
+          <th>Joining Date</th>
+          <th>Degination</th>
+        </tr>
+      </thead>
+      <tbody id="employee-data"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
 </html>
