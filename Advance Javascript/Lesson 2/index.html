@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classes|javaScript</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h2>Classes in javaScript.</h2>
     <h3>How to Create Class.</h3>
 
-    
     <p id="student1"></p>
 
     <p id="student2"></p>
 
-
-
-
-
-
-
-
     <script>
-
-        class Student {
-            constructor(name, year, work){
-                this.name = name;                
-                this.year = year;
-                this.work = work;
-            }
-
-            //Creating an age method
-            age(){
-               let date = new Date();
-               return date.getFullYear() - this.year; 
-               
-            }
+      class Student {
+        constructor(name, year, work) {
+          this.name = name;
+          this.year = year;
+          this.work = work;
         }
 
+        //Creating an age method
+        age() {
+          let date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
 
-        student1 = new Student('Prokhor', 2009, 'Student');
-        document.getElementById("student1").innerHTML = "My name is " + student1.name + ".<br>" + "I was born in " + student1.year + ".<br>" + "I am " + student1.age() + " years old." + "<br>" + "I am a " + student1.work + ".";
+      student1 = new Student("Prokhor", 2009, "Student");
+      document.getElementById("student1").innerHTML =
+        "My name is " +
+        student1.name +
+        ".<br>" +
+        "I was born in " +
+        student1.year +
+        ".<br>" +
+        "I am " +
+        student1.age() +
+        " years old." +
+        "<br>" +
+        "I am a " +
+        student1.work +
+        ".";
 
-        student2 = new Student('Saquib', 2007, 'Student');
-        document.getElementById("student2").innerHTML = "My name is " + student2.name + ".<br>" + "I was born in " + student2.year + ".<br>" + "I am " + student2.age() + " years old." + "<br>" + "I am a " + student2.work + ".";
-
-
-
-
-
-
-
+      student2 = new Student("Saquib", 2007, "Student");
+      document.getElementById("student2").innerHTML =
+        "My name is " +
+        student2.name +
+        ".<br>" +
+        "I was born in " +
+        student2.year +
+        ".<br>" +
+        "I am " +
+        student2.age() +
+        " years old." +
+        "<br>" +
+        "I am a " +
+        student2.work +
+        ".";
     </script>
-</body>
+  </body>
 </html>
