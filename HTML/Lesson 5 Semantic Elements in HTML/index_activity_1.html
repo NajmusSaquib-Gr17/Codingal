@@ -1,97 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic Elements</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-        nav li {
-            float: left;
-        }
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 15px 20px;
-            text-decoration: none;
-        }
-        nav li a:hover {
-            background-color: #111;
-        }
-        header, main, footer {
-            text-align: center;
-            padding: 20px;
-        }
-        figure {
-            margin: 20px auto;
-        }
-        img, video {
-            max-width: 100%;
-            height: auto;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      nav li {
+        float: left;
+      }
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        background-color: #111;
+      }
+      header,
+      main,
+      footer {
+        text-align: center;
+        padding: 20px;
+      }
+      figure {
+        margin: 20px auto;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
     </style>
-</head>
-<body>
-
-<header>
-    <h1>Webpage Heading</h1>
-    <nav aria-label="Main Navigation">
+  </head>
+  <body>
+    <header>
+      <h1>Webpage Heading</h1>
+      <nav aria-label="Main Navigation">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <section>
+    <main>
+      <section>
         <article>
-            <h2>First Article</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ratione mollitia corrupti, eveniet doloremque saepe eos sit tempora ut dolorem, labore facere totam? Consequatur, iure dolorem amet dolores vel id, unde quisquam impedit nesciunt porro doloribus iusto quaerat obcaecati expedita architecto! Ex eius quibusdam perferendis atque similique rem esse beatae!</p>
+          <h2>First Article</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+            ratione mollitia corrupti, eveniet doloremque saepe eos sit tempora
+            ut dolorem, labore facere totam? Consequatur, iure dolorem amet
+            dolores vel id, unde quisquam impedit nesciunt porro doloribus iusto
+            quaerat obcaecati expedita architecto! Ex eius quibusdam perferendis
+            atque similique rem esse beatae!
+          </p>
         </article>
 
         <aside>
-            <h2>Related Information</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</p>
+          <h2>Related Information</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.
+          </p>
         </aside>
-    </section>
+      </section>
 
-    <figure>
-        <img src="/Lesson 4 Media in HTML/Image/Firefly Digital Landscapes 1.jpg" alt="Digital Landscape illustration">
+      <figure>
+        <img
+          src="/Lesson 4 Media in HTML/Image/Firefly Digital Landscapes 1.jpg"
+          alt="Digital Landscape illustration"
+        />
         <figcaption>Digital Landscape</figcaption>
-    </figure>
+      </figure>
 
-    <section aria-label="Multimedia Content">
+      <section aria-label="Multimedia Content">
         <h2>AI Processor Video</h2>
         <video controls width="400">
-            <source src="/Lesson 4 Media in HTML/Image/AI Processor.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+          <source
+            src="/Lesson 4 Media in HTML/Image/AI Processor.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
         </video>
 
         <h2>Relaxing Music</h2>
         <audio controls>
-            <source src="/Lesson 4 Media in HTML/Image/Relaxing Music.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
+          <source
+            src="/Lesson 4 Media in HTML/Image/Relaxing Music.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
         </audio>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer>
-    <p>&copy; 2024 All Rights Reserved</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+  </body>
 </html>
