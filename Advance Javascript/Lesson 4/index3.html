@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divide by Zero.</title>
+  </head>
+
+  <body>
+    <h3>If a number divide by zero then the result is undefined.</h3>
+
+    <p id="divide"></p>
+    <p id="error"></p>
+
+    <script>
+      let divide = (a, b) => {
+        if (b === 0) {
+          throw new Error("You cannot divide by zero");
+        } else {
+          return a / b;
+        }
+      };
+
+      try {
+        let result = divide(4, 0);
+        document.getElementById("divide").innerHTML = result;
+      } catch (error) {
+        document.getElementById("error").innerHTML = error.message;
+      }
+    </script>
+  </body>
+</html>
