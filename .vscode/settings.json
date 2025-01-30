@@ -1,3 +1,7 @@
 {
-    "livePreview.defaultPreviewPath": "/After Class Project/Bootstrap/Create a Slider/index.html"
+    "livePreview.defaultPreviewPath": "/After Class Project/Bootstrap/Create a Slider/index.html",
+    "codeium.disableTabJump": false,
+    "codeium.disableSupercomplete": false,
+    "codeium.enableSearch": true,
+    "cmake.touchbar.visibility": "default"
 }
