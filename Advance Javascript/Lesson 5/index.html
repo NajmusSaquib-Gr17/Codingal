@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON | Asynchronous | Await</title>
+</head>
+<body>
+    <h2>Conveting a javascript object into string, and sending it to server</h2>
+    <p id="result"></p>
+
+    <script>
+        const myObj = {
+            name: "John",
+            age: 31,
+            city: "New York",
+            items : ["item1", "item2"],
+
+            address: {
+                street: "abc street",
+                city: "xyz city",
+                country: "USA"
+            }
+        };
+
+        const myJSON = JSON.stringify(myObj);
+        const newObj = JSON.parse(myJSON);
+
+        document.getElementById("result").innerHTML = "Name : "+newObj.name+ "<br>" + "Age : " +newObj.age+ "<br>" + "City : "+ newObj.city + "<br>" + "Items : "+ newObj.items+ "<br>" + newObj.address.street
+    </script>
+</body>
+</html>
