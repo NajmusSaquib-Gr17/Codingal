@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form name="myForm" onsubmit="myValidate()">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name"> <br> <br>
+
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password"> <br> <br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="password" id="email"> <br> <br>       
+
+        <input type="submit" value="Login">
+    </form>
+
+    <p id="err" style="color: red;"></p>
+
+    <script>
+
+        function myValidate(){
+
+            let fname = document.forms['myForm']['name'].value;
+            let error = document.getElementById("err")
+
+            let errors_array = [];
+            
+
+            if (fname == ""){
+                errors_array.push('Name is required');
+            } else if (fname.length < 5){
+                errors_array.push('Name must be 5 Characters')
+            }
+
+            if (errors_array.length > 0) {
+                error.innerHTML = errors_array.join("<br>");
+                return false;
+            }
+
+            error.style.color = "green";
+            error.innerHTML = "Form Submitted";
+
+            return false;
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
