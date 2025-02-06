@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <!--Ascending Order-->
+
+    <h3>Arranging an Array in ascending order. (0, 3, 5, 7, 1, 4, 6, 9, 2)</h3>
+    <button type="button" onclick="ascending_order()">Click me</button>
+    <p id="demo"></p>
+    <br />
+
+    <!--Descending Order-->
+
+    <h3>Arranging an Array in descending order. (0, 3, 5, 7, 1, 4, 6, 9, 2)</h3>
+    <button type="button" onclick="descending_order()">Click me</button>
+    <p id="demo1"></p>
+    <br />
+
+    <!--Exponential Increase-->
+
+    <h3>
+      Exponential Increase of Array Numbers by Power '2'. (0, 3, 5, 7, 1, 4, 6,
+      9, 2)
+    </h3>
+    <button type="button" onclick="exponential()">Click me</button>
+    <p id="demo2"></p>
+
+    <script>
+      //Ascending Order Function
+
+      function ascending_order() {
+        let array = [0, 3, 5, 7, 1, 4, 6, 9, 2];
+
+        array.sort(function (a, b) {
+          return a - b;
+        });
+
+        document.getElementById("demo").innerHTML = array;
+      }
+
+      //Descending Order Function
+
+      function descending_order() {
+        let array_1 = [0, 3, 5, 7, 1, 4, 6, 9, 2];
+
+        array_1.sort(function (a, b) {
+          return b - a;
+        });
+
+        document.getElementById("demo1").innerHTML = array_1;
+      }
+
+      //Exponential Increase
+
+      function exponential() {
+        let array_2 = [0, 3, 5, 7, 1, 4, 6, 9, 2];
+
+        exponential = array_2.map(function (a) {
+          return a ** 2;
+        });
+
+        document.getElementById("demo2").innerHTML = exponential;
+      }
+    </script>
+  </body>
+</html>
