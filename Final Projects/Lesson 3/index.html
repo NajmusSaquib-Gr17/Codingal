@@ -13,49 +13,52 @@
         }
 
         span {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             
             
         }
 
         img {
-            background-color: rgb(255, 255, 255);
-            border-radius: 100%;                      
+            /* background-color: rgb(255, 255, 255);
+            border-radius: 100%;                       */
+            
            
                       
         }
 
         span, img{
-            z-index: 1;
+            z-index: 2;
         }
 
         #social-links img {
-            border: 3px solid white; 
-            z-index: 1;                       
+            /* border: 3px solid black;  */
+            z-index: 2;                       
         }
 
         .ic {
-            border: 2px solid white;
-            padding: 12px;  
-            position: relative;
+            border: 4px solid rgb(19, 97, 215);
+            border-radius: 5px;
+            padding: 12px;
+            position: relative;            
             cursor: pointer;            
             overflow: hidden;          
         }
 
-        .ic ::after{
+        .ic::after{
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 0%;
             height: 100%;            
-            background-color: #fdc302;
-            transition: width 0.2s ease-in-out;
-            z-index: -1;
+            background-color: #fec76f;
+            transition: width 0.5s ease-in-out;
+            z-index: 1;
         }
 
-        .ic :hover::after {
-            width: 100%;            
+        .ic:hover::after {
+            width: 100%;                  
+                    
         }
 
     
@@ -70,8 +73,8 @@
 </head>
 <body>
 
-    <div class="bg-dark ">
-        <div class="container-fluid text-white p-5">
+    <div class="bg-light ">
+        <div class="container-fluid text-dark p-5">
             <h3 class="text-warning">Social Media</h3>
             <h1>Connect with me</h1>
 
