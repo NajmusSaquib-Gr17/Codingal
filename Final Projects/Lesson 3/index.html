@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Lesson 3</title>
+
+
+    <style>
+        .head{            
+            margin-top: 2.5rem;
+        }
+
+        span {
+            font-size: 1.3rem;
+            
+            
+        }
+
+        img {
+            background-color: rgb(255, 255, 255);
+            border-radius: 100%;                      
+           
+                      
+        }
+
+        span, img{
+            z-index: 1;
+        }
+
+        #social-links img {
+            border: 3px solid white; 
+            z-index: 1;                       
+        }
+
+        .ic {
+            border: 2px solid white;
+            padding: 12px;  
+            position: relative;
+            cursor: pointer;            
+            overflow: hidden;          
+        }
+
+        .ic ::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;            
+            background-color: #fdc302;
+            transition: width 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        .ic :hover::after {
+            width: 100%;            
+        }
+
+    
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-dark ">
+        <div class="container-fluid text-white p-5">
+            <h3 class="text-warning">Social Media</h3>
+            <h1>Connect with me</h1>
+
+            <div class="row d-flex align-itmes-center justify-content-center gap-3 head" id="social-links">
+                <div class="col-5 col-lg-2 d-flex align-itmes-center justify-content-start ic" >
+                    <img src="facebook-icon.svg" class="img-fluid" style="width: 15%;" alt="facebook-icon">
+                    <span class="px-3">Facebook</span>
+                </div>
+
+                <div class="col-5 col-lg-2  d-flex align-itmes-center justify-content-start ic" >
+                    <img src="github-icon.svg" class="img-fluid" style="width: 15%;" alt="facebook-icon">
+                    <span class="px-3">Github</span>
+                </div>
+
+                <div class="col-5 col-lg-2 d-flex align-itmes-center justify-content-start ic">
+                    <img src="instagram-icon.svg" class="img-fluid" style="width: 15%;" alt="facebook-icon">
+                    <span class="px-3">Instagram</span>
+                </div>
+
+                <div class="col-5 col-lg-2  d-flex align-itmes-center justify-content-start ic">
+                    <img src="gmail.svg" class="img-fluid" style="width: 15%;" alt="facebook-icon">
+                    <span class="px-3">Google</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
