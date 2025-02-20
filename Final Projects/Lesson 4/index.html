@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Age Calculator</title>
+
+    <style>
+        .birthdate{
+            border: 2px solid white;
+            padding: 100px;
+            background-color: rgb(22, 24, 27);
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+        }
+
+        label{
+            font-size: 20px;
+            padding: 3px;
+            margin-bottom: 8px;
+        }
+
+        input{
+            padding: 4px;
+            
+            
+        }
+    </style> 
+
+    
+</head>
+<body class="container-fluid d-flex align-items-center justify-content-center bg-dark text-light" style="height: 100vh;">
+    <div class="birthdate">
+        <h1>Age Calculator</h1>
+        <label for="birthdate">Enter your birthdate : </label>
+        <input type="date" name="birthdate" id="birthdate">
+        <button class="btn btn-primary" type="button">Calculate Your Age</button>
+    </div>
+    
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
