@@ -12,6 +12,9 @@
     <title>Portfolio</title>
   </head>
   <style>
+    html {
+      scroll-behavior: smooth;      
+    }
     .main {
       background-color: #000911;
     }
@@ -75,12 +78,32 @@
   
   </style>
   <body>
-    <div class="img-fluid head" style="background-image: url('chef.jpg');
+    <nav class="navbar navbar-expand-md sticky-top bg-dark border-bottom border-body " data-bs-theme="dark"">
+      <div class="container-fluid">
+        <a class="navbar-brand px-4 fs-3" href="#head">Food Market</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse p-2" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active px-2 mx-2" aria-current="page" href="#head">Home</a>
+            <a class="nav-link px-2 mx-2" href="#menu-start">Food Menu</a>
+            <a class="nav-link px-2 mx-2" href="#footer">About Us</a>
+            
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </nav>
+    <div class="img-fluid head" id="head" style="background-image: url('chef.jpg');
       background-size: cover;  
       background-position: center; 
       background-repeat: no-repeat;
       width: 100%;
-      height: 100vh; 
+      height: 120vh; 
   ">
       Welcome to Our Delicious Food Menu
       <div class="container-fluid d-flex align-items-center justify-content-end">
@@ -277,8 +300,21 @@
         </div>
       </div>
 
-      <div class="footer">
+      <div class="footer" id="footer">
         &copy; 2025 Delicious Food Menu | All Rights Reserved
+        <div class="container-fluid d-flex align-items-center justify-content-around">
+          Connect with us through Social Media
+        </div>
+        <div class="container-fluid d-flex align-items-center justify-content-center fs-3 p-2">
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-github"></i></a>
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" style="background-color: #011627; border: none; box-shadow: none; padding: 10px;"><i class="fa-brands fa-pinterest"></i></a>  
+          
+          
+        </div>
       </div>
     </div>
 
@@ -287,5 +323,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/aba231d2a9.js" crossorigin="anonymous"></script>
   </body>
 </html>
