@@ -1,5 +1,5 @@
 
-def indentation():
+def indentation(): #Indentation Function
 
     print("Hello World!")
     print(45)
@@ -9,7 +9,7 @@ def indentation():
 
 indentation()
 
-def sum():
+def sum(): #Sum function
     a = 5
     b = 6
     c = a + b
@@ -17,7 +17,7 @@ def sum():
 
 sum()
 
-def subtraction():
+def subtraction(): #Subtraction function
     a = 1000
     b = 542
     c = a - b
