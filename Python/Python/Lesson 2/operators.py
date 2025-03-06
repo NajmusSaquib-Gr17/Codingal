@@ -33,5 +33,5 @@ print(full_name.isalnum())
 ascii = "$"
 print(ascii.isascii())
 
-replace = Names
+replace = "Names"
 print(replace.replace("s", ""))
