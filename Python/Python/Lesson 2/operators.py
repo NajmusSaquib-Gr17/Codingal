@@ -35,3 +35,5 @@ print(ascii.isascii())
 
 replace = "Names"
 print(replace.replace("s", ""))
+
+print(full_name.swapcase())
