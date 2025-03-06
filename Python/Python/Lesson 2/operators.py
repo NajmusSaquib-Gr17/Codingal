@@ -13,7 +13,7 @@ print(f"Exponential Operator  = {x**y}")
 print(f"is X equal to Y {x==y}")
 print(f"is X not equal to Y {x!=y}")
 
-first_name = "Najmus"
+first_name = "najmus"
 last_name = "Saquib"
 full_name = first_name + last_name
 
@@ -22,3 +22,16 @@ print(f"Length of the String full_name {len(full_name)}")
 print(f"indexing of string [3] {full_name[3]}")
 print(f"indexing of string [-2] {full_name[-2]}")
 print(f"indexing of string [0:3] {full_name[0:3]}")
+
+print(full_name.capitalize())
+print(full_name.upper())
+print(full_name.lower())
+print(full_name.find("s"))
+print(full_name.find("s", 0, 6))
+print(full_name.isalnum())
+
+ascii = "$"
+print(ascii.isascii())
+
+replace = Names
+print(replace.replace("s", ""))
