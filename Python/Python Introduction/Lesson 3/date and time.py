@@ -7,4 +7,4 @@ print(current_time.date())
 print(current_time.isoweekday())
 print(current_time.ctime())
 
-#print(calendar.calendar(100))
+print(calendar.calendar(100))
