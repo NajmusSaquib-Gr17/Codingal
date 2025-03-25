@@ -2,10 +2,11 @@
 list1 = ["apple", "banana", "cherry", "date", "grape", "kiwi", "mango", "orange", "strawberry", "watermelon"]
 
 print(list1)
-print("Length: ", len(list1))
+print("Length:", len(list1))
 print(list1[-1])
 
 list1.append("pineapple")
+print("New Length:", len(list1))
 print(list1)
 
 list1.remove("cherry")
