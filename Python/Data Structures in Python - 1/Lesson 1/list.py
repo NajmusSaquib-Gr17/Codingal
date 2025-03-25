@@ -1,6 +1,5 @@
 
-list1 = ["apple", "banana", "cherry", "date", "grape", 
-          "kiwi", "mango", "orange", "strawberry", "watermelon"]
+list1 = ["apple", "banana", "cherry", "date", "grape", "kiwi", "mango", "orange", "strawberry", "watermelon"]
 
 print(list1)
 print("Length: ", len(list1))
