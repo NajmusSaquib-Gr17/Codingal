@@ -2,7 +2,7 @@ import random
 
 def guessTheNumber():
     number = random.randint(1, 10)
-    attempts = 3
+    attempts = 5
 
     while attempts > 0:
         try:
