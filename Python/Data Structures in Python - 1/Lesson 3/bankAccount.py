@@ -11,7 +11,7 @@ class BankAccount:
 
     def generate_account_number(self):
         while True:
-            number = random.randint(10000, 99999)
+            number = random.randint(100000000000000, 999999999999999)
 
             if number not in BankAccount.used_account_numbers:
                 BankAccount.used_account_numbers.add(number)
