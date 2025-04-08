@@ -1,18 +1,21 @@
-class Libray:
+class Library:
     def __init__(self, booklist, name):
         self.booklist = booklist
         self.name = name
         self.lendBook = {}
+
     def displayBooks(self):
         print('We have following books: ')
         for book in self.booklist:
             print(book)
+
     def lendBooks(self, user, book):
         if book not in self.lendBook.keys():
             self.lendBook.update({book:user})
             print('Update in the database, you can take the book')
         else:
             print('You have already borrowed it')
+
     def addBooks(self, book):
         self.booklist.append(book)
         print('Book added')
@@ -21,7 +24,7 @@ class Libray:
         self.lendBook.pop(book)
 
 if __name__ == '__main__':
-    books = Libray(['Python', 'Javascript', 'Harry Potter', 'Machine Learning', 'DeepLearning', 'AI'], 'user')
+    books = Library(['Python', 'Javascript', 'Harry Potter', 'Machine Learning', 'DeepLearning', 'AI'], 'user')
 
     while(True):
         print('Welcome')
@@ -42,13 +45,16 @@ if __name__ == '__main__':
         elif user_input == 2:
             book = input('Enter the book name: ')
             user = input('Enter your name: ')
-            books.lendBook(user, book)
+            books.lendBooks(user, book) # it should be lendBooks insted of lendBook
 
         elif user_input == 3:
-            book = input('Enter the book name you want to return')
-            books.returnBook(books)
+            book = input('Enter the book name you want to add')# promt error it should be Enter the book name you want to add
+            books.addBooks(book)# Wrong Method returnBook(books) it should be addBooks(book)
         else:
-            print('Enter valid input')
+            book = input('Enter the book name you want to return: ')
+            books.returnBook(book)
+        
+
         
         print('Enter q to quit and c to continue')
         user_input2 = ''
