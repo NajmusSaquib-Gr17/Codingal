@@ -1,7 +1,5 @@
 Coding: The Language of the Future
 
 Coding is the art of telling computers what to do. Using languages like Python, JavaScript, or C++, coders create websites, apps, games, and even control robots. It’s more than just typing symbols—it’s about solving problems, thinking logically, and building things that didn’t exist before.
-
 Whether you're automating a task, analyzing data, or designing a new mobile app, coding gives you the tools to turn ideas into reality. It's not just for tech geniuses either—anyone can learn to code with a bit of curiosity and persistence.
-
 In a world that runs on technology, coding isn’t just a useful skill. It’s a superpower.
