@@ -21,3 +21,5 @@ label.pack()
 
 text = Text(master=frame, fg='yellow', bg='blue')
 text.pack()
+
+window.mainloop()
