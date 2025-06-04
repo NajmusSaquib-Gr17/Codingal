@@ -16,6 +16,6 @@ def sieve_of_eratosthenes(n):
     return primes
 
 
-n = 100000000 #int(input("Enter the value of n: "))
+n = 1 #int(input("Enter the value of n: "))
 prime_numbers = sieve_of_eratosthenes(n)
 print(f"Prime numbers up to {n} are: {prime_numbers}")
