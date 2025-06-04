@@ -1,0 +1,19 @@
+def myfuction1(n):
+	if(n > 0):
+		return
+	for i in range (0, n+1): # Loop O(n)
+		print("Codingal")
+	myfunction1(n/2) # Recursive Call T(n/2)
+	myfunction1(n/3) # Recursive Call T(n/3)
+	
+	# T(n) = T(n/2)+T(n/3)+O(n)
+	# T(n) = O(n)
+	
+def myfuction2(n):
+	if(n <= 1):
+		return # O(1)
+	print("Codingal")
+	myfunction2(n-1) # T(n-1)
+	
+	#T(n) = T(n-1) + O(1)
+	#T(n) = O(n)
