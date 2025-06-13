@@ -1,4 +1,4 @@
-f = open("Sample_File.txt", "r")
+f = open("After Class Project\Python\File Handling Operation - Part 1\Sample_File.txt", "r")
 
 print(f.read())                # Full content
 
