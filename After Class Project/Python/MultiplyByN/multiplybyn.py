@@ -21,7 +21,7 @@ def nIteration(a, b):
 num1 = 999999999 #int(input("Enter Number 1: "))
 num2 = 999999 #int(input("Enter Number 2: "))
 
-#print(iteration1(num1, num2))
-print(nIteration(num1, num2))
+print(iteration1(num1, num2)) #Avg Time = 0.07sec
+print(nIteration(num1, num2)) #Without Condition Avg_Time = 35sec, With Condition Avg_Time = 0.9sec
 
     
