@@ -14,4 +14,4 @@ def generate_password(length=12):
     return ''.join(password)
 
 
-print(generate_password(10000))
+print(generate_password(12))
