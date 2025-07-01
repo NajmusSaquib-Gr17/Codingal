@@ -1,0 +1,32 @@
+CREATE TABLE STUDENTS(
+    ROLL_NO TEXT PRIMARY KEY,
+    NAME TEXT NOT NULL,
+    ADDRESS TEXT,
+    PHONE TEXT,
+    AGE INTEGER
+);
+
+
+INSERT INTO STUDENTS (ROLL_NO, NAME, ADDRESS, PHONE, AGE) VALUES
+('S001', 'Rakib Hossain', 'Dhaka', '01710000001', 20),
+('S002', 'Mehedi Hasan', 'Chattogram', '01820000002', 22),
+('S003', 'Nusrat Jahan', 'Sylhet', '01930000003', 19),
+('S004', 'Tanvir Rahman', 'Rajshahi', '01640000004', 21),
+('S005', 'Sumaiya Akter', 'Khulna', '01550000005', 23),
+('S006', 'Shamim Alam', 'Barisal', '01760000006', 20),
+('S007', 'Afsana Mim', 'Rangpur', '01870000007', 18),
+('S008', 'Jahidul Islam', 'Mymensingh', '01980000008', 22),
+('S009', 'Farzana Haque', 'Dhaka', '01790000009', 21),
+('S010', 'Sazzad Hossain', 'Comilla', '01810000010', 20);
+
+SELECT * FROM STUDENTS
+
+SELECT * FROM STUDENTS WHERE AGE = 20;
+
+SELECT * FROM STUDENTS WHERE AGE > 18 AND ADDRESS = 'Dhaka'
+
+SELECT * FROM STUDENTS WHERE AGE = 19 OR AGE = 21;
+
+SELECT * FROM STUDENTS WHERE AGE LIKE '%0';
+
+SELECT * FROM STUDENTS WHERE NAME LIKE 'A_%'
