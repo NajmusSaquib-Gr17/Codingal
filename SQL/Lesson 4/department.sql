@@ -1,0 +1,46 @@
+CREATE TABLE IF NOT EXISTS DEPARTMENT(
+    EMPLOYEE_ID TEXT,
+    NAME TEXT,
+    DEPT_ID TEXT,
+    MANAGER_ID TEXT,
+    SALARY REAL
+);
+
+INSERT INTO DEPARTMENT (EMPLOYEE_ID, NAME, DEPT_ID, MANAGER_ID, SALARY) VALUES
+('E001', 'Rahim Uddin', 'D01', 'M001', 55000.00),
+('E002', 'Karim Hasan', 'D01', 'M001', 53000.00),
+('E003', 'Sadia Akter', 'D01', 'M001', 52000.00),
+('E004', 'Tarek Islam', 'D02', 'M002', 60000.00),
+('E005', 'Mitu Chowdhury', 'D02', 'M002', 58000.00),
+('E006', 'Shamim Reza', 'D02', 'M002', 61000.00),
+('E007', 'Nasrin Jahan', 'D03', 'M003', 62000.00),
+('E008', 'Firoz Alam', 'D03', 'M003', 59000.00),
+('E009', 'Jannatul Ferdous', 'D03', 'M003', 63000.00),
+('E010', 'Abdul Hannan', 'D04', 'M004', 70000.00),
+('E011', 'Sumaiya Sultana', 'D04', 'M004', 68000.00),
+('E012', 'Sabbir Ahmed', 'D04', 'M004', 71000.00),
+('E013', 'Shila Khatun', 'D05', 'M005', 75000.00),
+('E014', 'Rafiq Mia', 'D05', 'M005', 73000.00),
+('E015', 'Nazia Islam', 'D05', 'M005', 76000.00),
+('E016', 'Kamrul Hasan', 'D01', 'M001', 54000.00),
+('E017', 'Asma Begum', 'D02', 'M002', 59000.00),
+('E018', 'Sultan Mahmud', 'D03', 'M003', 62500.00),
+('E019', 'Hasina Akter', 'D04', 'M004', 70500.00),
+('E020', 'Jahangir Kabir', 'D05', 'M005', 74000.00);
+
+SELECT * FROM DEPARTMENT;
+
+SELECT DEPT_ID AS 'DEPARTMENT CODE', 
+COUNT(*) AS 'NO_OF_EMPLOYEES',
+SUM(SALARY) AS 'TOTAl SALARY'
+FROM DEPARTMENT
+GROUP BY DEPT_ID
+
+SELECT DEPT_ID, SUM(SALARY)
+FROM  DEPARTMENT
+GROUP BY DEPT_ID
+
+SELECT DEPT_ID, MAX(SALARY)
+FROM  DEPARTMENT
+GROUP BY DEPT_ID
+
